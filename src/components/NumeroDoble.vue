@@ -2,12 +2,20 @@
     <div>
         <h1>Número doble: {{ doble }}</h1>
         <h2 style="color:red">{{ mensaje }}</h2>
+        <button @click="redirectToHome()">
+            Go to Home
+        </button>
     </div>
 </template>
 
 <script>
     export default {
         name: "NumeroDoble",
+        methods: {
+            redirectToHome() {
+                this.$router.push("/");
+            }
+        },
         data() {
             return {
                 mensaje: "", 
