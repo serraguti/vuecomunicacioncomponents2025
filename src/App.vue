@@ -1,14 +1,15 @@
 <template>
-  <ComicsComponent/>
+  <MenuComponent/>
+  <router-view></router-view>
 </template>
 
 <script>
-import ComicsComponent from './components/ComicsComponent.vue';
+import MenuComponent from './components/MenuComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    ComicsComponent
+    MenuComponent
   }
 }
 </script>
